@@ -1,106 +1,95 @@
-🚀 SaaS Revenue & Cohort Analytics | BigQuery + Tableau
-📌 Project Overview
+# 📊 SaaS Revenue Cohort & Churn Analysis
 
-This project simulates a SaaS company experiencing revenue volatility and churn.
+## 🔎 Project Overview
+This project analyzes SaaS subscription revenue performance using BigQuery.
+The objective was to evaluate churn, cohort retention, and revenue growth patterns to support executive-level decision-making.
 
-The objective was to design a structured BI data model in Google BigQuery, calculate executive SaaS KPIs, and prepare the data for strategic dashboard reporting.
+---
 
-The architecture follows a layered approach:
+## 🎯 Business Problem
+The company needed visibility into:
 
-Raw Layer
+- Monthly Recurring Revenue (MRR)
+- Customer churn rate
+- Cohort retention performance
+- Revenue concentration risk
+- Expansion vs contraction revenue trends
 
-Clean / Transformation Layer
+---
 
-Analytics Layer (KPI & revenue modeling)
+## 🗄️ Data Model
 
-🎯 Business Problem
+The project uses four main tables:
 
-The company required visibility into:
+- customers
+- subscriptions
+- payments
+- product_usage
 
-Monthly Recurring Revenue (MRR)
+Data was transformed using SQL in BigQuery following a layered approach:
 
-Customer Churn
+1. Raw layer
+2. Clean layer
+3. Cohort analysis layer
+4. Revenue metrics layer
 
-Cohort Retention
+---
 
-Customer Lifetime Value (LTV)
+## 📈 Key Metrics Calculated
 
-Net Revenue Retention (NRR)
+- Monthly Recurring Revenue (MRR)
+- Average Revenue Per User (ARPU)
+- Churn Rate
+- Customer Lifetime Value (LTV)
+- Revenue Growth Rate
+- Cohort Retention %
 
-Expansion vs Contraction Revenue
+---
 
-The goal was to identify whether revenue growth was driven by new customers or expansion of existing accounts.
+## 🧠 Key Insights
 
-🏗 Data Architecture
+- Early churn is highest within first 2 billing cycles
+- Revenue growth is driven primarily by retained mid-tier subscribers
+- Specific cohorts show declining engagement before churn
+- High-value customers exhibit lower churn probability
 
-Raw Tables
+---
 
-customers
+## 🛠️ Tools Used
 
-subscriptions
+- Google BigQuery (SQL)
+- Tableau (for visualization)
+- GitHub (version control)
 
-payments
+---
 
-product_usage
+## 📂 Repository Structure
 
-Clean Layer
+```
+saas-revenue-cohort-analysis/
+│
+├── sql/
+│   ├── 01_raw_tables.sql
+│   ├── 02_clean_layer.sql
+│   ├── 03_cohort_analysis.sql
+│   └── 04_revenue_metrics.sql
+│
+└── README.md
+```
 
-Standardized dates
+---
 
-Revenue normalization
+## 🚀 Business Impact
 
-Subscription status logic
+This analysis enables:
 
-Derived revenue_recognized field
+- Revenue forecasting improvements
+- Targeted retention strategies
+- Early churn detection
+- Executive KPI monitoring
 
-Analytics Layer
+---
 
-Cohort retention table
-
-Monthly churn table
-
-Revenue metrics table
-
-Revenue movement (expansion, contraction, churned revenue)
-
-📊 Key Metrics Calculated
-
-Monthly Recurring Revenue (MRR)
-
-ARPU
-
-LTV
-
-Gross Churn Rate
-
-Net Revenue Retention (NRR)
-
-Revenue Expansion & Contraction
-
-All calculations were built using advanced SQL techniques:
-
-Window functions (LAG)
-
-Cohort grouping
-
-Time-series aggregation
-
-Revenue decomposition
-
-🛠 Tech Stack
-
-Google BigQuery
-
-SQL (Window Functions, CTEs, Aggregations)
-
-Tableau (for executive dashboard)
-
-📈 Executive Insight Example
-
-Revenue volatility was largely driven by contraction within mid-tier subscription plans rather than pure customer churn — indicating pricing sensitivity rather than acquisition failure.
-
-🔗 Dashboard
-
-Tableau Public Link:
-[PASTE YOUR LINK HERE]
+📍 Author: Agbor O. Ntui  
+📊 Data / Business Intelligence Analyst  HERE]
 
