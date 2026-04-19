@@ -88,3 +88,32 @@ Data was transformed in BigQuery using a layered approach:
 ---
 
 ## 📂 Repository Structure
+
+📁 sql
+   ├── 01_raw_tables.sql
+   ├── 02_clean_layer.sql
+   ├── 03_cohort_analysis.sql
+   └── 04_revenue_metrics.sql
+
+📁 dashboards
+   ├── dashboard_1.png
+   ├── dashboard_2.png
+   └── dashboard_3.png
+
+📄 README.md
+
+---
+
+## 🚀 Business Impact
+
+This project provides:
+
+- Improved visibility into customer retention and churn drivers  
+- Data-driven insights for revenue optimization  
+- Early detection of performance decline  
+- Strategic input for product and growth teams  
+
+---
+
+👤 **Author:** Agbor O. Ntui  
+📊 Business Intelligence Analyst  
