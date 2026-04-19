@@ -1,95 +1,90 @@
-# 📊 SaaS Revenue Cohort & Churn Analysis
+# 📊 SaaS Revenue, Cohort & Churn Analysis
 
 ## 🔎 Project Overview
-This project analyzes SaaS subscription revenue performance using BigQuery.
-The objective was to evaluate churn, cohort retention, and revenue growth patterns to support executive-level decision-making.
+This project analyzes SaaS subscription performance to uncover key drivers of revenue growth, customer retention, and churn behavior.
+
+Using SQL (BigQuery) and Tableau, I built an end-to-end BI solution to transform raw subscription data into actionable business insights.
 
 ---
 
 ## 🎯 Business Problem
-The company needed visibility into:
+The company lacked clear visibility into customer lifecycle and revenue performance, making it difficult to:
 
-- Monthly Recurring Revenue (MRR)
-- Customer churn rate
-- Cohort retention performance
-- Revenue concentration risk
-- Expansion vs contraction revenue trends
+- Track Monthly Recurring Revenue (MRR)
+- Understand churn patterns
+- Evaluate cohort retention trends
+- Identify revenue risks and growth opportunities
+
+---
+
+## 📊 Dashboard Highlights
+
+### 📈 Revenue Performance Dashboard
+- Monthly revenue trend with average benchmark
+- Revenue by acquisition channel
+- KPIs: Total Revenue, ARPU, Active Customers
+
+### 🔥 Cohort Retention Analysis
+- Monthly cohort heatmap showing retention drop-off
+- Key insight: ~62.5% of users churn after Month 1
+
+### 📉 Churn & Retention Dashboard
+- Net Revenue Retention (NRR)
+- Monthly churn rate trends
+- Customer behavior insights
 
 ---
 
 ## 🗄️ Data Model
 
-The project uses four main tables:
+The project uses four core tables:
 
-- customers
-- subscriptions
-- payments
-- product_usage
+- `customers`
+- `subscriptions`
+- `payments`
+- `product_usage`
 
-Data was transformed using SQL in BigQuery following a layered approach:
+Data was transformed in BigQuery using a layered approach:
 
-1. Raw layer
-2. Clean layer
-3. Cohort analysis layer
-4. Revenue metrics layer
+1. Raw Layer  
+2. Clean Layer  
+3. Cohort Analysis Layer  
+4. Revenue Metrics Layer  
 
 ---
 
-## 📈 Key Metrics Calculated
+## 📈 Key Metrics
 
 - Monthly Recurring Revenue (MRR)
 - Average Revenue Per User (ARPU)
 - Churn Rate
 - Customer Lifetime Value (LTV)
-- Revenue Growth Rate
+- Net Revenue Retention (NRR)
 - Cohort Retention %
 
 ---
 
 ## 🧠 Key Insights
 
-- Early churn is highest within first 2 billing cycles
-- Revenue growth is driven primarily by retained mid-tier subscribers
-- Specific cohorts show declining engagement before churn
-- High-value customers exhibit lower churn probability
+- Significant early churn: ~62.5% of users drop after Month 1  
+- Revenue peaked before showing signs of decline → potential slowdown  
+- Retained users drive the majority of revenue growth  
+- High churn rate (~28%) highlights need for retention strategies  
 
 ---
 
 ## 🛠️ Tools Used
 
 - Google BigQuery (SQL)
-- Tableau (for visualization)
-- GitHub (version control)
+- Tableau (Data Visualization)
+- GitHub (Version Control)
+
+---
+
+## 📸 Dashboard Preview
+
+*(Add screenshots here — VERY IMPORTANT)*
 
 ---
 
 ## 📂 Repository Structure
-
-```
-saas-revenue-cohort-analysis/
-│
-├── sql/
-│   ├── 01_raw_tables.sql
-│   ├── 02_clean_layer.sql
-│   ├── 03_cohort_analysis.sql
-│   └── 04_revenue_metrics.sql
-│
-└── README.md
-```
-
----
-
-## 🚀 Business Impact
-
-This analysis enables:
-
-- Revenue forecasting improvements
-- Targeted retention strategies
-- Early churn detection
-- Executive KPI monitoring
-
----
-
-📍 Author: Agbor O. Ntui  
-📊 Data / Business Intelligence Analyst  HERE]
-
