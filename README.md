@@ -84,9 +84,13 @@ Data was transformed in BigQuery using a layered approach:
 ## 📸 Dashboard Preview
 
 ### Revenue Dashboard
-![Revenue](dashboards/dashboard_1.png)
+![Revenue](dashboards/dashboard_1.png) 
 
----
+### Cohort Analysis
+![Cohort](dashboards/dashboard_2.png)
+
+### Churn Dashboard
+![Churn](dashboards/dashboard_3.png)
 
 ## 📂 Repository Structure
 
