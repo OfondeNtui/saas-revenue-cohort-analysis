@@ -83,7 +83,8 @@ Data was transformed in BigQuery using a layered approach:
 
 ## 📸 Dashboard Preview
 
-*(Add screenshots here — VERY IMPORTANT)*
+### Revenue Dashboard
+![Revenue](dashboards/dashboard_1.png)
 
 ---
 
