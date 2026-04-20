@@ -83,7 +83,7 @@ Data was transformed in BigQuery using a layered approach:
 
 ## 📸 Dashboard Preview
 
-**Interactive Version (Tableau Public):**https://public.tableau.com/https://public.tableau.com/app/profile/agbor.ofonde.ntui/viz/SaaSRevenueCohortAnalyticsDashboard/Dashboard1
+[🔗 View Interactive Dashboard (Tableau Public)](https://public.tableau.com/app/profile/agbor.ofonde.ntui/viz/SaaSRevenueCohortAnalyticsDashboard/Dashboard1)
 
 ### Revenue Dashboard
 ![Revenue](dashboards/dashboard_1.png) 
